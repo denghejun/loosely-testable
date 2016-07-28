@@ -50,7 +50,7 @@ namespace AppBizLogic.Tests
             mock.Mock<ICalculate>().Verify(o => o.Add(5, 7), Times.Once()); // the mocked ICalculator Provider's Add(5,7) should be call only once.
             mock.Mock<ICalculate>().Verify(o => o.Sub(5, 7), Times.Once()); // the mocked ICalculator Provider's Sub(5,7) should be call only once.
             mock.Mock<INotify>().Verify(o => o.Notify(string.Format("RESULT:{0}", -24)), Times.Once()); // the mocked INotify Provider's Notify(...) should be call only once.
-            Assert.That(result, Is.EqualTo(-24));// the result should be -24
+            Assert.That(result, Is.EqualTo(-25));// the result should be -24
         }
     }
 }
