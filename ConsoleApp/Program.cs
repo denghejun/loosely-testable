@@ -13,8 +13,8 @@ namespace ConsoleApp
             var container = builder.Build();
             using (var scope = container.BeginLifetimeScope())
             {
-                var appCoreInstance = scope.Resolve<ConsoleApp.Core>();
-                appCoreInstance.CalculateComplex(1,7);
+                var appCoreInstance = scope.Resolve<AppBizLogic.Core>();
+                appCoreInstance.CalculateComplex(1, 7);
             }
 
             Console.Read();

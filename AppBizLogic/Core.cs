@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppDependentServices;
 
-namespace ConsoleApp
+namespace AppBizLogic
 {
     public class Core
     {
